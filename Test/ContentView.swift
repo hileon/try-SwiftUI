@@ -15,7 +15,9 @@ struct ContentView: View {
         NavigationView {
             VStack{
                 List{
-                    NavigationLink("TestView", destination: TestView())
+                    NavigationLink("Test Padding", destination: TestPaddingView())
+                    
+                    NavigationLink("Test TabView", destination: TestTabView())
                     
                     NavigationLink("OpenUrlAction", destination: OpenUrlActionView())
                         
@@ -29,7 +31,7 @@ struct ContentView: View {
                 
                 Toggle("Navigstor title", isOn: $hideNavBar)
                     .padding()
-                Text("Select a Note")
+                LZNoteView("Demo of navigation functions.")
             }//.edgesIgnoringSafeArea(.all)
             .navigationBarHidden(hideNavBar)
         }
