@@ -20,6 +20,8 @@ struct ContentView: View {
                     NavigationLink("Test TabView", destination: TestTabView())
                     
                     NavigationLink("OpenUrlAction", destination: OpenUrlActionView())
+                    
+                    NavigationLink("Combine Basic", destination: CombineBasicView())
                         
                 }.listStyle(GroupedListStyle())
                 .navigationTitle("Test Swift")
