@@ -20,20 +20,21 @@ struct Msg {
 class NSC:ObservableObject {
     @Published var message:String = "default msg"
     var center:NotificationCenter
-    var publisher
+    var subscription:Cancellable?
     
     init() {
         center = NotificationCenter.default
-    }
-    
-    func subMsg() -> Void {
-        publisher = center.publisher(for: .testMessage, object: nil).map(\.object)
-        let subscription = publisher.sink { n in
+        let publisher = center.publisher(for: .testMessage, object: nil).map(\.object)
+        subscription = publisher.sink { n in
             let m = (n as! Msg)
             print("sink a msg:")
             print(m.msg)
             self.message = m.msg
         }
+    }
+    
+    func subMsg() -> Void {
+        
     }
     
     func postTestMsg() -> Void {
