@@ -9,17 +9,21 @@ import SwiftUI
 import Combine
 
 struct CombineBasicView: View {
-    @State var msg = ""
+    @State private var msg = ""
     @ObservedObject var nsc = NSC()
     
     var body: some View {
         VStack(spacing: 20){
+            TextField(
+                "input message to send to notify center",
+                 text: $msg
+            ).padding()
             Button("Send Message", action: {
-                nsc.postTestMsg()
+                nsc.postTestMsg(message: msg)
                 print("a message was sent")
             })
             
-            Text(nsc.message)
+            Text(nsc.currentMessage)
             
             Spacer()
         }.onAppear(perform: {

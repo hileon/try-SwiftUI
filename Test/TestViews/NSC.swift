@@ -18,18 +18,21 @@ struct Msg {
 }
 
 class NSC:ObservableObject {
-    @Published var message:String = "default msg"
+    @Published var currentMessage:String = "default msg"
     var center:NotificationCenter
+//    var publisher: Publisher //#TBD 怎么把publisher保存成class的属性
     var subscription:Cancellable?
     
     init() {
         center = NotificationCenter.default
         let publisher = center.publisher(for: .testMessage, object: nil).map(\.object)
         subscription = publisher.sink { n in
-            let m = (n as! Msg)
-            print("sink a msg:")
-            print(m.msg)
-            self.message = m.msg
+//            print(n ?? "this is no message data")
+            if let m = (n as! Msg?) {
+                print("sink a msg:")
+                print(m.msg)
+                self.currentMessage = m.msg
+            }
         }
     }
     
@@ -37,8 +40,8 @@ class NSC:ObservableObject {
         
     }
     
-    func postTestMsg() -> Void {
-        let m = Msg(msg: "test msg 123", author: "leon")
+    func postTestMsg(message:String) -> Void {
+        let m = Msg(msg: message, author: "leon")
         center.post(name: .testMessage, object: m)
     }
 }

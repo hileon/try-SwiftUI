@@ -21,6 +21,8 @@ struct ContentView: View {
                     
                     NavigationLink("OpenUrlAction", destination: OpenUrlActionView())
                     
+                    NavigationLink("Apple logo", destination: AppleLogoView())
+                    
                     NavigationLink("Combine Basic", destination: CombineBasicView())
                         
                 }.listStyle(GroupedListStyle())
