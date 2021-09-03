@@ -24,6 +24,8 @@ struct ContentView: View {
                     NavigationLink("Apple logo", destination: AppleLogoView())
                     
                     NavigationLink("Combine Basic", destination: CombineBasicView())
+                    
+                    NavigationLink("Bar view", destination: BarView())
                         
                 }.listStyle(GroupedListStyle())
                 .navigationTitle("Test Swift")
