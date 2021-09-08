@@ -13,6 +13,9 @@
 		1828DAEC267219A200A51C01 /* TempView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828DAEB267219A200A51C01 /* TempView.swift */; };
 		1828DAEE26730B1F00A51C01 /* CombineBasicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1828DAED26730B1F00A51C01 /* CombineBasicView.swift */; };
 		1852BD0F26E1FF21002754AD /* BarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1852BD0E26E1FF21002754AD /* BarView.swift */; };
+		1852BD1126E8AC08002754AD /* StockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1852BD1026E8AC08002754AD /* StockService.swift */; };
+		1852BD1326E8B3AF002754AD /* StockListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1852BD1226E8B3AF002754AD /* StockListViewModel.swift */; };
+		1852BD1526E8B56F002754AD /* StockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1852BD1426E8B56F002754AD /* StockView.swift */; };
 		1880AA472668D61B00661B4F /* TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880AA462668D61B00661B4F /* TestApp.swift */; };
 		1880AA492668D61B00661B4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1880AA482668D61B00661B4F /* ContentView.swift */; };
 		1880AA4B2668D61E00661B4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1880AA4A2668D61E00661B4F /* Assets.xcassets */; };
@@ -31,6 +34,9 @@
 		1828DAEB267219A200A51C01 /* TempView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempView.swift; sourceTree = "<group>"; };
 		1828DAED26730B1F00A51C01 /* CombineBasicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineBasicView.swift; sourceTree = "<group>"; };
 		1852BD0E26E1FF21002754AD /* BarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarView.swift; sourceTree = "<group>"; };
+		1852BD1026E8AC08002754AD /* StockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockService.swift; sourceTree = "<group>"; };
+		1852BD1226E8B3AF002754AD /* StockListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockListViewModel.swift; sourceTree = "<group>"; };
+		1852BD1426E8B56F002754AD /* StockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockView.swift; sourceTree = "<group>"; };
 		1880AA432668D61B00661B4F /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1880AA462668D61B00661B4F /* TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp.swift; sourceTree = "<group>"; };
 		1880AA482668D61B00661B4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +80,9 @@
 				1828DACA2671B9EB00A51C01 /* TestPaddingView.swift */,
 				1828DAED26730B1F00A51C01 /* CombineBasicView.swift */,
 				18B3C9DA26735EF300E047BF /* NSC.swift */,
+				1852BD1026E8AC08002754AD /* StockService.swift */,
+				1852BD1226E8B3AF002754AD /* StockListViewModel.swift */,
+				1852BD1426E8B56F002754AD /* StockView.swift */,
 			);
 			path = TestViews;
 			sourceTree = "<group>";
@@ -191,12 +200,15 @@
 				1880AA502668D61E00661B4F /* Persistence.swift in Sources */,
 				1828DACB2671B9EB00A51C01 /* TestPaddingView.swift in Sources */,
 				1828DAEE26730B1F00A51C01 /* CombineBasicView.swift in Sources */,
+				1852BD1326E8B3AF002754AD /* StockListViewModel.swift in Sources */,
 				189A5DBB26808A3F00956711 /* AppleLogoView.swift in Sources */,
 				1852BD0F26E1FF21002754AD /* BarView.swift in Sources */,
 				1828DAC72671A3E600A51C01 /* LZNoteView.swift in Sources */,
 				18B3C9DB26735EF300E047BF /* NSC.swift in Sources */,
+				1852BD1526E8B56F002754AD /* StockView.swift in Sources */,
 				1880AA5B2668D65000661B4F /* TestTabView.swift in Sources */,
 				1880AA532668D61E00661B4F /* Test.xcdatamodeld in Sources */,
+				1852BD1126E8AC08002754AD /* StockService.swift in Sources */,
 				1828DAEC267219A200A51C01 /* TempView.swift in Sources */,
 				1880AA492668D61B00661B4F /* ContentView.swift in Sources */,
 				1880AA472668D61B00661B4F /* TestApp.swift in Sources */,
